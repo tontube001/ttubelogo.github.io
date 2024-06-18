@@ -1,0 +1,207 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-color: rgb(12, 24, 36);
+    
+}
+#headSec{
+    background-color: rgb(12, 24, 36);
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+}
+#ttlogo{
+    height: 13vmin;
+    width: 13vmin;
+    border-radius: 50%;
+    margin: 10px;
+    box-shadow: 2px 2px 10px black;
+
+}
+#ttTitle{
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(19, 188, 255);
+    font-size: 6vmin;
+    margin: 0;
+    padding: 0;
+    text-shadow: 2px 2px 10px black;
+}
+#block{
+    
+    height: 100vmin;
+    width: 100%;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+}
+#intro{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 900;
+    font-size: 10vmin;
+    color: white;
+}
+#videotxt{
+    color: black;
+    text-shadow: 3px 3px 1px skyblue, -3px -3px 1px pink;
+}
+#tele{
+    color: rgb(19, 188, 255);
+    text-shadow: 1px 1px 10px black;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 900;
+    font-size: 10vmin;
+}
+#ca{
+
+    width: 100%;
+    height: 90px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#sca{
+    border: solid 1px rgb(19, 188, 255);
+    border-right: none;
+    height: 7vmin;
+    width: 75vmin;
+    background-color: rgb(12, 24, 36);
+    color: lightgray;
+    border-top-left-radius: 50px;
+    border-bottom-left-radius: 50px;
+    padding-left: 5px;
+    font-size: 2.7vmin;
+    font-family: monospace;
+    font-weight: 100;
+}
+#copytxt{
+    height: 7.6vmin;
+    border: none;
+    width: 10vmin;
+    border-top-right-radius: 50px;
+    border-bottom-right-radius: 50px;
+    background-color: rgb(19, 188, 255);
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 2.5vmin;
+    font-weight: 900;
+}
+#schead{
+    
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 4vmin;
+    font-weight: 100;
+    color: white;
+    text-shadow: 1px 1px 10px black;
+}
+#project-details{
+    width: 100%;
+    height: 520px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#pd-card{
+    width: 85%;
+    height: 75vmin;
+    display: flex;
+
+    border-radius: 10px;
+    color: white;
+    border: solid 1px rgb(19, 188, 255);
+    box-shadow: 1px 1px 10px black;
+    padding: 15px;
+}
+#pdtxt{
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 100;
+    font-size: 4vmin;
+    line-height: 1.6;
+}
+.importants{
+    color: rgb(19, 188, 255);
+}
+#tokenomics-title{
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 700;
+    font-size: 5vmin;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+#tokenomics{
+    width: 100%;
+    height: 520px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 35vmin;
+    margin-bottom: 50vmin;
+}
+#tokenomics-card{
+    width: 85%;
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+    color: white;
+    border: solid 1px rgb(19, 188, 255);
+    box-shadow: 1px 1px 10px black;
+    padding: 15px;
+}
+.tk-titles{
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 500;
+    font-size: 4vmin;
+    color: white;
+}
+.tk-details{
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 100;
+    font-size: 2.5vmin;
+}
+#roadmap{
+    height: 180vmin;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 50px;
+}
+.roadCards{
+    background: linear-gradient(45deg, rgb(0, 146, 204), rgb(19, 188, 255));
+    border: none;
+    width: 90%;
+    border-radius: 10px;
+    height: 21vmin;
+    box-shadow: 1px 1px 10px black;
+    padding: 10px;
+}
+.cardTitle{
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 3.5vmin;
+    font-weight: 900;
+}
+.card-info{
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 500;
+    font-size: 3vmin;
+    
+}
+#airdrop{
+    box-shadow: 3px 3px 2px skyblue, -3px -3px 2px pink;
+}
