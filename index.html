@@ -16,6 +16,7 @@
     align-items: center;
     height: 100vh;
     margin: 0;
+    padding: 0;
     background-color: #70c5ce;
     flex-direction: column;
 }
@@ -52,6 +53,7 @@ button {
 }
 
     </style>
+    <script src="https://telegram.org/js/telegram-web-app.js"></script>
 </head>
 <body>
     <canvas id="gameCanvas" width="320" height="480"></canvas>
@@ -192,14 +194,14 @@ const restartButton = document.getElementById('restartButton');
 // Game variables
 let birdY = canvas.height / 2;
 let birdVelocity = 0;
-const gravity = 0.5;
+const gravity = 0.4;
 const jump = -6.5;
 const birdWidth = 30;
 const birdHeight = 20;
 let score = 0;
 let pipes = [];
 const pipeWidth = 50;
-const pipeGap = 110;
+const pipeGap = 130;
 let gameOver = false;
 let gameStarted = false;
 let birdAngle = 0;
@@ -269,9 +271,9 @@ function gameLoop() {
 
     // Draw the bird with rotation
     ctx.save();
-    ctx.translate(30 + birdWidth / 2, birdY + birdHeight / 2);
-    ctx.rotate(birdAngle * Math.PI / 150);
-    ctx.fillStyle = 'yellow';
+    ctx.translate(50 + birdWidth / 2, birdY + birdHeight / 2);
+    ctx.rotate(birdAngle * Math.PI / 180);
+    ctx.fillStyle = 'black';
     ctx.fillRect(-birdWidth / 2, -birdHeight / 2, birdWidth, birdHeight);
     ctx.restore();
 
