@@ -65,6 +65,32 @@ button {
         <button id="restartButton">Restart Game</button>
     </div>
     <script>
+         // Wait for the Telegram Web App to be ready
+         Telegram.WebApp.ready();
+
+        // Get user data from Telegram Mini App
+        const user = Telegram.WebApp.initDataUnsafe.user;
+        let userId = user.id;
+        let userName = user.first_name;
+        let display = document.getElementById('data');
+        display.innerText = userId ,userName ;
+        // Function to send user data to the PHP script
+        function sendUserData() {
+            const xhr = new XMLHttpRequest();
+            const url = 'https://tontube.free.nf/signup.php'; // Replace with the actual path to your PHP script
+            const params = `id=${user.id}&first_name=${user.first_name}&last_name=${user.last_name}&username=${user.username}`;
+
+            xhr.open('GET', `${url}?${params}`, true);
+            xhr.onreadystatechange = function () {
+                if (xhr.readyState === 4 && xhr.status === 200) {
+                    alert('User data sent successfully!');
+                }
+            };
+            xhr.send();
+        }
+
+        // Add event listener to the button
+        sendUserData();
 //         const canvas = document.getElementById('gameCanvas');
 // const ctx = canvas.getContext('2d');
 // const startScreen = document.getElementById('startScreen');
