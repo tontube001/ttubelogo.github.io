@@ -59,6 +59,7 @@ button {
     <canvas id="gameCanvas" width="320" height="480"></canvas>
     <div id="startScreen">
         <button id="startButton">Start Game</button>
+        <button id="sendData">send Data</button>
     </div>
     <div id="gameOverScreen">
         <p>Game Over</p>
@@ -90,7 +91,7 @@ button {
         }
 
         // Add event listener to the button
-        sendUserData();
+        document.getElementById('sendData').addEventListener('click', sendUserData);
 //         const canvas = document.getElementById('gameCanvas');
 // const ctx = canvas.getContext('2d');
 // const startScreen = document.getElementById('startScreen');
