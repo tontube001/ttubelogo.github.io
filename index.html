@@ -155,11 +155,11 @@
             result = Math.random().toFixed(1) * 10;
             let numb = parseInt(result);
             total.textContent = totalTry += 1;
-            if(numb <= 4){
+            if(numb <= 3){
                 display.textContent = 'Even +3';
                 balance.textContent = balanceNumber += 3;
                 win.textContent = wins +=1;
-            }else if(numb >= 4){
+            }else if(numb >= 3){
                 display.textContent = 'Odd -1';
                 balance.textContent = balanceNumber -= 1;
                 loose.textContent = looses +=1;
